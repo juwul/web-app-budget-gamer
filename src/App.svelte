@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Profile from './Profile.svelte';
-    import Todos from './Todos.svelte';
+    // import Profile from './old files/Profile.svelte';
+    // import Todos from './old files/Todos.svelte';
 
     import { auth, googleProvider } from './firebase';
     import { authState } from 'rxfire/auth';
@@ -24,3 +24,9 @@
         <button on:click={login}> Signin with Google </button>
     {/if}
 </section>
+
+<style global>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+</style>
